@@ -31,9 +31,9 @@
                 android:gravity="center"
                 android:ems="1" />
             <NumberPicker
-                android:id="@+id/SpeedControl"
+                android:id="@+id/speedcontrol"
                 android:layout_width="20dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/speed_text"/>
             <com.kongqw.rockerlibrary.view.RockerView

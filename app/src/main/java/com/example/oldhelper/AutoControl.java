@@ -16,7 +16,7 @@ public class AutoControl extends AppCompatActivity {
     ImageView autoWarningText;
     @BindView(R.id.auto_start_button)
     Button autoStartButton;
-
+    private SendUitl sendUitl;
     private boolean flag = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +25,17 @@ public class AutoControl extends AppCompatActivity {
         ButterKnife.bind(this);
         autoWarningText.setImageResource(R.drawable.start_text);
         flag = !flag;
+        sendUitl = new SendUitl(AutoControl.this);
     }
 
     @OnClick(R.id.auto_start_button)
     public void onViewClicked() {
         if (flag){
             autoWarningText.setImageResource(R.drawable.start_successfully);
+            sendUitl.sendInstruction(SendUitl.AUTO_START);
         }else{
             autoWarningText.setImageResource(R.drawable.start_text);
+            sendUitl.sendInstruction(SendUitl.AUTO_STOP);
         }
         flag = !flag;
     }

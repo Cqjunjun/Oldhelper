@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".About"></activity>
-        <activity android:name=".SettingSecond" />
-        <activity android:name=".SettingFirst" />
-        <activity android:name=".AutoControl" />
-        <activity android:name=".RemoteControl" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Setting" android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AutoControl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RemoteControl"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -27,6 +27,7 @@ android {
     repositories {
         mavenCentral()
         google()
+        maven { url 'https://jitpack.io' }
     }
 
 }
@@ -43,4 +44,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    compile 'com.github.kongqw:AndroidRocker:1.0.1'
 }
